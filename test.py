@@ -6,8 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    while True:
-        time.sleep(1)
+    for i in range(10):
         print('Error message', file=sys.stderr)
     return 'wow, nechego sebe vot eto da\n'
 
